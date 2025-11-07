@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Normalize -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!---Welcome-->
+    <section class="section-welcome">
+      <div class="container">
+        <!-- ряд з текстом -->
+        <div class="welcome-row">
+          <div class="welcome-col-left">
+            <p class="welcome-subtitle">Welcome</p>
+            <h2 class="welcome-title">
+              Our Journey: Passion for Quality Coffee
+            </h2>
+          </div>
+
+          <div class="welcome-col-right">
+            <p class="welcome-description">
+              At CoffeeJoy, we believe that every cup tells a story. Our mission
+              is to bring you the finest coffee experiences, crafted with care
+              and dedication. We are committed to sourcing high-quality beans
+              and roasting them to perfection, ensuring each sip is a delight.
+            </p>
+
+            <button class="btn-find-location" type="button">
+              <span>Find location</span>
+              <svg class="btn-welcome-icon" width="24" height="24">
+                <use href="./images/icons/icons.svg#icon-map-pin"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- картинка нижче на всю ширину -->
+        <div class="welcome-image">
+          <picture>
+            <source
+              media="(max-width:767px)"
+              srcset="
+                /images/welcome_mob_1x.jpg   1x,
+                /images/welcome_mob@2x-2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                /images/welcome_tab_1x.jpg   1x,
+                /images/welcome_tab@2x-2.jpg 2x
+              "
+            />
+            <source
+              media="(min-width:1440px)"
+              srcset="
+                /images/welcome_desk_1x.jpg   1x,
+                /images/welcome_desk@2x-2.jpg 2x
+              "
+            />
+            <img
+              class="welcome-image"
+              src="./images/welcome_mob_1x.jpg"
+              alt="Barista pouring coffee"
+              width="288"
+              height="162"
+              loading="lazy"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
